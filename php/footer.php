@@ -1,3 +1,4 @@
+		<script src="/js/main.js"></script>
 		<div class="footer">
 			Alex Beals &#169; 2014 - <?php echo date("Y"); ?><br>
 			<a style="font-size: 10px; color: grey;" target="_blank" href="/assets/pgp.txt">Click for Public PGP Key</a>
