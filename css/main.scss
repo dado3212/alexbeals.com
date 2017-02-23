@@ -361,121 +361,119 @@ button.menu {
 *   Portfolio Articles
 *
 *************************************************/
-#portfolio {
-  article {
-    font-family: 'Charter';
-    font-size: 1.2em;
+article {
+  font-family: 'Charter';
+  font-size: 1.2em;
 
-    width: 65%;
-    margin: 0 auto;
-    margin-top: 20px;
-    padding-bottom: 20px;
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
 
-    -webkit-font-smoothing: antialiased;
-    color: rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0, 0, 0, 0.8);
 
-    img {
-      max-width: 100%;
+  img {
+    max-width: 100%;
+  }
+
+  a {
+    color: $primary-color;
+    cursor: pointer;
+
+    font-family: 'Kievit';
+    font-weight: 700;
+
+    &:not(.live):not(.github):hover {
+      text-decoration: underline;
     }
 
+    &.live, &.github {
+      font-family: 'Font Awesome';
+      margin-right: 7px;
+    }
+  }
+
+  p {
     a {
-      color: $primary-color;
-      cursor: pointer;
+      font-family: 'Charter';
 
-      font-family: 'Kievit';
-      font-weight: 700;
-
-      &:not(.live):not(.github):hover {
+      &:hover {
         text-decoration: underline;
       }
+    }
+  }
 
-      &.live, &.github {
-        font-family: 'Font Awesome';
-        margin-right: 7px;
+  h3 {
+    font-family: 'Kievit';
+    font-weight: 700;
+    
+    font-size: 1.4em;
+    letter-spacing: -0.6px;
+    margin: 0px;
+
+    a {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+
+  h4 {
+    font-family: 'Kievit';
+    font-weight: 300;
+    
+    font-size: 1.2em;
+    letter-spacing: -0.6px;
+    margin: 0px;
+  }
+
+  &:not(.preview) {
+    .image {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 500px;
+      text-align: center;
+
+      span {
+        font-size: 0.8em;
+        color: rgba(0,0,0,0.6);
       }
     }
+  }
 
-    p {
-      a {
-        font-family: 'Charter';
+  &.preview {
+    display:inline-block;
 
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
+    width: calc(100% - 24px);
+    font-size: 1.05em;
 
-    h3 {
-      font-family: 'Kievit';
-      font-weight: 700;
-      
-      font-size: 1.4em;
-      letter-spacing: -0.6px;
-      margin: 0px;
+    column-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
 
-      a {
-        color: rgba(0, 0, 0, 0.8);
-      }
-    }
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 
-    h4 {
-      font-family: 'Kievit';
-      font-weight: 300;
-      
-      font-size: 1.2em;
-      letter-spacing: -0.6px;
-      margin: 0px;
-    }
-
-    &:not(.preview) {
-      .image {
-        width: 90%;
-        margin: 0 auto;
-        max-width: 500px;
-        text-align: center;
-
-        span {
-          font-size: 0.8em;
-          color: rgba(0,0,0,0.6);
-        }
-      }
-    }
-
-    &.preview {
-      display:inline-block;
-
-      width: calc(100% - 24px);
-      font-size: 1.05em;
-
-      column-break-inside: avoid;
-      -webkit-column-break-inside: avoid;
-      -moz-column-break-inside: avoid;
-
-      background-color: white;
-      border-radius: 5px;
-      padding: 15px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    .image {
+      margin: -15px -15px 10px -15px;
+      max-height: 250px;
       overflow: hidden;
 
-      .image {
-        margin: -15px -15px 10px -15px;
-        max-height: 250px;
-        overflow: hidden;
-
-        img {
-          max-width: 100%;
-        }
+      img {
+        max-width: 100%;
       }
     }
   }
+}
 
-  .columns {
-    column-width: 388px;
-    column-gap: 24px;
-    width: 90%;
-    max-width: 800px;
-    margin: 0px auto 40px auto;
-  }
+.columns {
+  column-width: 388px;
+  column-gap: 24px;
+  width: 90%;
+  max-width: 800px;
+  margin: 0px auto 40px auto;
 }
 
 /************************************************

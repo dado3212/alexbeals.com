@@ -1,11 +1,7 @@
-<?php include('../../php/header.php'); ?>
-	<title>Alex Beals | What's Line?</title>
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
-
-	<script src="/js/jquery-2.1.3.min.js"></script>
-	<script src="/js/main.js"></script>
-</head>
-<body>
+<?php
+	$title = "Alex Beals | What's Line?";
+	include('../../php/header.php');
+?>
 	<div class="content">
 		<article>
 			<h3>What's Line? | November 2015</h3>

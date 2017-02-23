@@ -273,7 +273,7 @@ button.menu {
 *   Portfolio Articles
 *
 *************************************************/
-#portfolio article {
+article {
   font-family: 'Charter';
   font-size: 1.2em;
   width: 65%;
@@ -282,45 +282,45 @@ button.menu {
   padding-bottom: 20px;
   -webkit-font-smoothing: antialiased;
   color: rgba(0, 0, 0, 0.8); }
-  #portfolio article img {
+  article img {
     max-width: 100%; }
-  #portfolio article a {
+  article a {
     color: #127EC7;
     cursor: pointer;
     font-family: 'Kievit';
     font-weight: 700; }
-    #portfolio article a:not(.live):not(.github):hover {
+    article a:not(.live):not(.github):hover {
       text-decoration: underline; }
-    #portfolio article a.live, #portfolio article a.github {
+    article a.live, article a.github {
       font-family: 'Font Awesome';
       margin-right: 7px; }
-  #portfolio article p a {
+  article p a {
     font-family: 'Charter'; }
-    #portfolio article p a:hover {
+    article p a:hover {
       text-decoration: underline; }
-  #portfolio article h3 {
+  article h3 {
     font-family: 'Kievit';
     font-weight: 700;
     font-size: 1.4em;
     letter-spacing: -0.6px;
     margin: 0px; }
-    #portfolio article h3 a {
+    article h3 a {
       color: rgba(0, 0, 0, 0.8); }
-  #portfolio article h4 {
+  article h4 {
     font-family: 'Kievit';
     font-weight: 300;
     font-size: 1.2em;
     letter-spacing: -0.6px;
     margin: 0px; }
-  #portfolio article:not(.preview) .image {
+  article:not(.preview) .image {
     width: 90%;
     margin: 0 auto;
     max-width: 500px;
     text-align: center; }
-    #portfolio article:not(.preview) .image span {
+    article:not(.preview) .image span {
       font-size: 0.8em;
       color: rgba(0, 0, 0, 0.6); }
-  #portfolio article.preview {
+  article.preview {
     display: inline-block;
     width: calc(100% - 24px);
     font-size: 1.05em;
@@ -332,13 +332,14 @@ button.menu {
     padding: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden; }
-    #portfolio article.preview .image {
+    article.preview .image {
       margin: -15px -15px 10px -15px;
       max-height: 250px;
       overflow: hidden; }
-      #portfolio article.preview .image img {
+      article.preview .image img {
         max-width: 100%; }
-#portfolio .columns {
+
+.columns {
   column-width: 388px;
   column-gap: 24px;
   width: 90%;
