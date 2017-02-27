@@ -1,5 +1,5 @@
 <?php
-  $image = "DogADayEmail.png";
+  $image = "DogADayEmail.jpg";
   $title = "Dog-a-Day | March 2016";
   $stack = "HTML, PHP, JS, CSS, SQL (MySQL), MailChimp";
   $live = "//alexbeals.com/projects/puppies";

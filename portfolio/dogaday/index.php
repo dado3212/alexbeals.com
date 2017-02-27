@@ -12,7 +12,7 @@
 				Dog-a-Day started as a Christmas present for my father (a cute dog picture every day for a year), but it ballooned into a subscription based service for daily puppy images.  I've built a backend for the images, and use MailChimp for easy sending and subscription services.
 			</p>
 			<div class="image">
-				<img src="DogADayEmail.png"/>
+				<img src="DogADayEmail.jpg"/>
 				<span>Sample Dog-a-Day email</span>
 			</div>
 			<p>

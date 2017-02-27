@@ -53,10 +53,10 @@
 	<body>
 		<div class="header">
 			<div class="link">
-				<a href="#contact">Contact Me</a>
+				<a href="/#contact">Contact Me</a>
 			</div>
 			<div class="link">
-				<a href="#portfolio">Portfolio</a>
+				<a href="/#portfolio">Portfolio</a>
 			</div>
 			<div>
 				<a href="//alexbeals.com">
@@ -75,8 +75,8 @@
 			</div>
 			<button class="menu"></button>
 			<ul class="lowerMenu">
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact Me</a></li>
+				<li><a href="/#portfolio">Portfolio</a></li>
+				<li><a href="/#contact">Contact Me</a></li>
 				<li><a href="//blog.alexbeals.com">Blog</a></li>
 				<li><a href="//cydia.alexbeals.com">Cydia Repo</a></li>
 			</ul>

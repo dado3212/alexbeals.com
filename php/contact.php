@@ -4,16 +4,7 @@
 
 	require_once('class.phpmailer.php');
 	include('class.smtp.php');
-
-	/*putenv('GNUPGHOME=/var/www/alexbeals.com/.gnupg');
-	$gpg = new gnupg();
-	$fingerprint = 'F6973F3C6209C6ED44AD558A2939CAFCDA0CD4F6';
-	$gpg->seterrormode(gnupg::ERROR_EXCEPTION);
-
-	$gpg->addencryptkey($fingerprint);
-
-	$msg = $gpg->encrypt($_POST['message'] . "\n");
-	*/
+	include("secret.php");
 
 	if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message']) && $_POST['name'] != "" && $_POST['email'] != "" && $_POST['message'] != "") {
 		$mail             = new PHPMailer();
@@ -30,7 +21,7 @@
 		$mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
 		$mail->Port       = 465;                   // set the SMTP port for the GMAIL server
 		$mail->Username   = "alexcbeals@gmail.com";  // GMAIL username
-		$mail->Password   = "xNKdk7ZDjBfFTp6AbeWk";            // GMAIL password
+		$mail->Password   = $gmail_password;            // GMAIL password
 
 		$mail->SetFrom($_POST['email'], $_POST['name']);
 		$mail->AddReplyTo($_POST['email'], $_POST['name']);
