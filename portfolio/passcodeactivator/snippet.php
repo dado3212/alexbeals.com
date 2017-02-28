@@ -1,5 +1,5 @@
 <?php
-  $image = "PasscodeActivator.jpg";
+  $image = "Header.jpg";
   $title = "PasscodeActivator | July 2015";
   $stack = "Objective-C";
   $live = "//cydia.alexbeals.com/PasscodeActivator";

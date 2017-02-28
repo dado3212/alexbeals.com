@@ -339,7 +339,8 @@ article {
       max-height: 250px;
       overflow: hidden; }
       article.preview .image img {
-        max-width: 100%; }
+        max-width: 100%;
+        width: 100%; }
 
 .columns {
   column-width: 388px;

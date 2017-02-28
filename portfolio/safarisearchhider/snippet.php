@@ -1,5 +1,5 @@
 <?php
-  $image = "SafariSearchHider.jpg";
+  $image = "Header.jpg";
   $title = "SafariSearchHider | August 2015";
   $stack = "Objective-C";
   $live = "//cydia.alexbeals.com/SafariSearchHider";

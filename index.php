@@ -1,6 +1,34 @@
 <?php
 	$title = "Alex Beals | Programmer";
-	include("php/header.php"); 
+	include("php/header.php");
+
+	$base_dir = dirname(__FILE__) . "/portfolio/";
+
+	function displaySnippets($projects) {
+		global $base_dir;
+
+		foreach ($projects as $file) {
+			$snippet = $base_dir . $file . "/snippet.php";
+			if (file_exists($snippet)) {
+				include($snippet);
+
+				echo "
+				<article class='preview'>
+					<div class='image'>
+						<img src='portfolio/$file/$image'>
+					</div>
+					<h3><a href='portfolio/$file'>$title</a></h3>
+					<h4>$stack</h4>" . 
+					(strlen($live) > 0 ? "<a class='live' href='$live'>&#xf0c1;</a>" : "") . 
+					(strlen($github) > 0 ? "<a class='github' href='$github'>&#xf09b;</a>" : "") . "
+					<p>
+						$description
+					</p>
+					<a href='portfolio/$file' aria-label='Continuation of Dartmouth Room Search writeup'>Read More &rsaquo;</a>
+				</article>";
+			}
+		}
+	}
 ?>
 	<div class="content">
 		<div id="about">
@@ -24,89 +52,23 @@
 			<h1>Portfolio</h1>
 			<div class="columns">
 				<?php
-					$files = ["dartmouthroomsearch", "colorize", "classy", "groupme", "thepackmarket"];
+					$projects = ["dartmouthroomsearch", "colorize", "classy", "groupme", "thepackmarket"];
 
-					$base_dir = dirname(__FILE__) . "/portfolio/";
-
-					foreach ($files as $file) {
-						$snippet = $base_dir . $file . "/snippet.php";
-						if (file_exists($snippet)) {
-							include($snippet);
-
-							echo "
-							<article class='preview'>
-								<div class='image'>
-									<img src='portfolio/$file/$image'>
-								</div>
-								<h3><a href='portfolio/$file'>$title</a></h3>
-								<h4>$stack</h4>
-								<a class='live' href='$live'>&#xf0c1;</a>" . 
-								(strlen($github) > 0 ? "<a class='github' href='$github'>&#xf09b;</a>" : "") . "
-								<p>
-									$description
-								</p>
-								<a href='portfolio/$file' aria-label='Continuation of Dartmouth Room Search writeup'>Read More &rsaquo;</a>
-							</article>";
-						}
-					}
+					displaySnippets($projects);
 				?>
 			</div>
 			<div class="columns">
 				<?php
-					$files = ["dogaday", "dartdine", "whatsline"];
+					$projects = ["dogaday", "dartdine", "surfshield", "whatsline"];
 
-					$base_dir = dirname(__FILE__) . "/portfolio/";
-
-					foreach ($files as $file) {
-						$snippet = $base_dir . $file . "/snippet.php";
-						if (file_exists($snippet)) {
-							include($snippet);
-
-							echo "
-							<article class='preview'>
-								<div class='image'>
-									<img src='/portfolio/$file/$image'>
-								</div>
-								<h3><a href='/portfolio/$file'>$title</a></h3>
-								<h4>$stack</h4>
-								<a class='live' href='$live'>&#xf0c1;</a>" . 
-								(strlen($github) > 0 ? "<a class='github' href='$github'>&#xf09b;</a>" : "") . "
-								<p>
-									$description
-								</p>
-								<a href='/portfolio/$file' aria-label='Continuation of Dartmouth Room Search writeup'>Read More &rsaquo;</a>
-							</article>";
-						}
-					}
+					displaySnippets($projects);
 				?>
 			</div>
 			<div class="columns">
 				<?php
-					$files = ["shiftcycle", "passcodeactivator", "safarisearchhider"];
+					$projects = ["shiftcycle", "passcodeactivator", "oncemore", "safarisearchhider"];
 
-					$base_dir = dirname(__FILE__) . "/portfolio/";
-
-					foreach ($files as $file) {
-						$snippet = $base_dir . $file . "/snippet.php";
-						if (file_exists($snippet)) {
-							include($snippet);
-
-							echo "
-							<article class='preview'>
-								<div class='image'>
-									<img src='/portfolio/$file/$image'>
-								</div>
-								<h3><a href='/portfolio/$file'>$title</a></h3>
-								<h4>$stack</h4>
-								<a class='live' href='$live'>&#xf0c1;</a>" . 
-								(strlen($github) > 0 ? "<a class='github' href='$github'>&#xf09b;</a>" : "") . "
-								<p>
-									$description
-								</p>
-								<a href='/portfolio/$file' aria-label='Continuation of Dartmouth Room Search writeup'>Read More &rsaquo;</a>
-							</article>";
-						}
-					}
+					displaySnippets($projects);
 				?>
 			</div>
 		</div>

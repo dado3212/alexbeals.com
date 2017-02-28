@@ -1,5 +1,5 @@
 <?php
-  $image = "ShiftCycle.jpg";
+  $image = "Header.jpg";
   $title = "ShiftCycle | August 2015";
   $stack = "Objective-C";
   $live = "//cydia.alexbeals.com/ShiftCycle";
