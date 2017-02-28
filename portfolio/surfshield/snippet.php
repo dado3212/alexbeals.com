@@ -1,5 +1,5 @@
 <?php
-  $image = "MainDisplay.jpg";
+  $image = "SurfShield.jpg";
   $title = "SurfShield | September 2016";
   $stack = "HTML, CSS, JS, Python";
   $live = "";

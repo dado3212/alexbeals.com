@@ -40,8 +40,8 @@
 
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="Alex Beals | Programmer">
-		<meta property="og:image" content="http://alexbeals.com/assets/images/transparent-logo.png">
-		<meta property="og:url" content="http://alexbeals.com">
+		<meta property="og:image" content="https://alexbeals.com/assets/images/solid-logo.jpg">
+		<meta property="og:url" content="https://alexbeals.com">
 		<meta property="og:description" content="Check out my resume, some of my past projects, or get in contact with me.">
 
 		<meta name="description" content="Check out my resume, some of my past projects, or get in contact with me.">
