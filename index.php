@@ -59,14 +59,14 @@
 			</div>
 			<div class="columns">
 				<?php
-					$projects = ["dogaday", "dartdine", "surfshield", "whatsline"];
+					$projects = ["dogaday", "surfshield", "markovmessages", "dartdine", "whatsline"];
 
 					displaySnippets($projects);
 				?>
 			</div>
 			<div class="columns">
 				<?php
-					$projects = ["shiftcycle", "passcodeactivator", "oncemore", "safarisearchhider"];
+					$projects = ["shiftcycle", "oncemore", "safarisearchhider", "passcodeactivator"];
 
 					displaySnippets($projects);
 				?>
