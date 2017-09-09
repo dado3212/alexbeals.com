@@ -152,7 +152,7 @@ body {
 .header {
   width: 100%;
   position: relative;
-  font-family: 'Montserrat Regular'; 
+  font-family: 'Montserrat Regular', sans-serif; 
   font-size: 0.95em;
   text-align: center;
   padding: 10px 0;
@@ -224,7 +224,7 @@ button.menu {
   border-radius: 6px;
   background-color: transparent;
   font-weight: bold;
-  font-family: 'Montserrat Regular';
+  font-family: 'Montserrat Regular', sans-serif;
   padding: 10px;
   font-size: 1em;
   vertical-align: top;
@@ -261,8 +261,11 @@ button.menu {
   max-height: 0;
   transition: max-height 0.2s ease;
 
+  background-color: #fbfbfb;
+
   &.active {
     max-height: 192px;
+    border-bottom: 1px solid #606060;
   }
 
   li {
@@ -346,13 +349,14 @@ button.menu {
 }
 
 .content h1 {
-  font-family: 'Dense Regular';
+  font-family: 'Dense Regular', sans-serif;
   text-transform: uppercase;
   font-size: 6em;
   margin: 0;
   font-weight: 100;
   color: #555;
   text-align: center;
+  overflow: hidden; // To prevent rendering bugs before font loads
 }
 
 /************************************************
@@ -361,7 +365,7 @@ button.menu {
 *
 *************************************************/
 article {
-  font-family: 'Charter';
+  font-family: 'Charter', serif;
   font-size: 1.2em;
 
   width: 65%;
@@ -380,7 +384,7 @@ article {
     color: $primary-color;
     cursor: pointer;
 
-    font-family: 'Kievit';
+    font-family: 'Kievit', sans-serif;
     font-weight: 700;
 
     &:not(.live):not(.github):hover {
@@ -395,7 +399,7 @@ article {
 
   p {
     a {
-      font-family: 'Charter';
+      font-family: 'Charter', serif;
 
       &:hover {
         text-decoration: underline;
@@ -404,7 +408,7 @@ article {
   }
 
   h3 {
-    font-family: 'Kievit';
+    font-family: 'Kievit', sans-serif;
     font-weight: 700;
     
     font-size: 1.4em;
@@ -417,7 +421,7 @@ article {
   }
 
   h4 {
-    font-family: 'Kievit';
+    font-family: 'Kievit', sans-serif;
     font-weight: 300;
     
     font-size: 1.2em;
@@ -426,13 +430,13 @@ article {
   }
 
   &:not(.preview) {
-    .image {
+    .image, .video {
       width: 90%;
       margin: 0 auto;
       max-width: 500px;
       text-align: center;
 
-      img {
+      img, video {
         max-height: 30em;
       }
 
@@ -495,6 +499,7 @@ article {
   box-sizing: border-box;
 
   height: 500px;
+  overflow: hidden;
 
   display: flex;
   align-items: center;

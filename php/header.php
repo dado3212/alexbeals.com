@@ -3,7 +3,7 @@
 	<head>
 		<?php
 			if (preg_match("/(iPhone|iPod|iPad|Android|BlackBerry|Mobile)/i", $_SERVER['HTTP_USER_AGENT'])) {
-				?><meta name="viewport" content="width=500"><?php
+				?><meta name="viewport" content="width=400"><?php
 			}
 		?>
 
@@ -48,7 +48,6 @@
 
 		<title><?php echo $title; ?></title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<script src="/js/jquery-2.1.3.min.js"></script>
 	</head>
 	<body>
 		<div class="header">

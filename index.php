@@ -24,7 +24,7 @@
 					<p>
 						$description
 					</p>
-					<a href='portfolio/$file' aria-label='Continuation of Dartmouth Room Search writeup'>Read More &rsaquo;</a>
+					<a href='portfolio/$file' aria-label='Continuation of writeup'>Read More &rsaquo;</a>
 				</article>";
 			}
 		}
@@ -37,7 +37,7 @@
 				<p>
 					Developer, hacker, student at Dartmouth College
 				</p>
-				<a class="resume" href="/assets/Resume.pdf">View my Resume</a>
+				<a class="resume" href="/assets/Alex Beals Resume.pdf">View my Resume</a>
 				<div class="external">
 					<a href="https://github.com/dado3212"><span class="icon-github"></a>
 					<a href="https://www.linkedin.com/in/alexbeals"><span class="icon-linkedin"></a>
@@ -66,7 +66,7 @@
 			</div>
 			<div class="columns">
 				<?php
-					$projects = ["shiftcycle", "oncemore", "referercontrol", "safarisearchhider", "passcodeactivator"];
+					$projects = ["shiftcycle", "oncemore", "referercontrol", "safarisearchhider", "passcodeactivator", "mercury"];
 
 					displaySnippets($projects);
 				?>

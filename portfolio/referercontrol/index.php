@@ -12,7 +12,7 @@
 				RefererControl is a tweak that allows you to customize the HTTP referer on a per-website basis. Works in Safari and Chrome.  This can allow you to disguise where your traffic is coming from, or take advantage of sites that check the referer to determine if you have viewing access.
 			</p>
 			<div class="image">
-				<img src="RefererControl.jpg"/>
+				<img src="RefererControl.png"/>
 				<span>RefererControl preferences screen</span>
 			</div>
 			<p>

@@ -1,3 +1,4 @@
+		<script src="/js/jquery-2.1.3.min.js"></script>
 		<script src="/js/main.js"></script>
 		<div class="footer">
 			Alex Beals &#169; 2014 - <?php echo date("Y"); ?><br>
@@ -11,7 +12,6 @@
 
 		  ga('create', 'UA-70745807-1', 'auto');
 		  ga('send', 'pageview');
-
 		</script>
 	</body>
 </html>

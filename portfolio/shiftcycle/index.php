@@ -23,7 +23,7 @@
 				<span>ShiftCycle Cydia install screen</span>
 			</div>
 			<p>
-				The tweak is written in Objective-C using the Theos development suite, specifically Logos that allows you to hook into iOS headers and modify how they function.  The simple tweak adds in functionality that is standard across the Android system for a more familiar feel, and makes it easy to modify your text if you had caps lock on, or want to make your hashtags legible.  By allowing you to toggle the scrolling options, it's easily customizable, and even works with emojis, different languages, and bluetooth keyboards.
+				The tweak is written in Objective-C using the Theos development suite, specifically Logos that allows you to hook into iOS functions and override how they work.  The simple tweak adds in functionality that is standard across the Android system for a more familiar feel, and makes it easy to modify your text if you had caps lock on, or want to make your hashtags legible.  By allowing you to toggle the scrolling options, it's easily customizable, and even works with emojis, different languages, and bluetooth keyboards.
 			</p>
 			<p>
 				With just under 20,000 downloads across all versions, this has been incredibly successful.  Feel free to <a href="//cydia.alexbeals.com/ShiftCycle">install it from Cydia</a> or just <a href="//github.com/dado3212/ShiftCycle">check out the code on GitHub</a>.
