@@ -52,7 +52,7 @@
 			<h1>Portfolio</h1>
 			<div class="columns">
 				<?php
-					$projects = ["dartmouthroomsearch", "colorize", "classy", "groupme", "thepackmarket"];
+					$projects = ["dartmouthroomsearch", "colorize", "classy", "groupme", "thepackmarket", "harrypotter"];
 
 					displaySnippets($projects);
 				?>
