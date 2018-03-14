@@ -66,7 +66,7 @@
 			</div>
 			<div class="columns">
 				<?php
-					$projects = ["shiftcycle", "oncemore", "referercontrol", "safarisearchhider", "passcodeactivator", "mercury"];
+					$projects = ["shiftcycle", "oncemore", "grayscalelock", "referercontrol", "safarisearchhider", "passcodeactivator", "mercury"];
 
 					displaySnippets($projects);
 				?>
