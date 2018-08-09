@@ -30,7 +30,7 @@
 
 		$mail->MsgHTML($body);
 
-		$mail->AddAddress("Alex.Beals.18@dartmouth.edu", "Alex Beals");
+		$mail->AddAddress("alexcbeals@gmail.com", "Alex Beals");
 
 		if(!$mail->Send()) {
 		  echo "Mailer Error: " . $mail->ErrorInfo;
