@@ -26,7 +26,7 @@ TheGuardian - Will turning your phone to greyscale really do wonders for your at
 			</p>
 			<div class="video">
 				<video controls autoplay loop muted>
-				  <source src="in_action.MOV">
+				  <source src="in_action.mov">
 				  Your browser does not support the video tag.
 				</video>
 				<span>Tweak in action</span>
