@@ -18,7 +18,7 @@
 				The finalized version has a list of books on the left side that you can choose from, and a quote with hidden context on the right.  After you make a choice (right or wrong) it reveals the additional context and displays the correct title. To do that, my extractor gets the main quote (with a min of 45 characters), and also tries to pull 750 total characters from the surrounding text.
 			</p>
 			<div class="video">
-				<video controls autoplay loop style="max-width: 100%;">
+				<video controls muted autoplay loop style="max-width: 100%;">
 				  <source src="./pageFlipAndTrying.mov" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>

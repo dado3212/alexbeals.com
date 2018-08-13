@@ -11,7 +11,7 @@
 				I had seen a series of animated gifs of automatic maze solving a year or two ago, and at the time had jotted a note to myself that it would make a cool idea for a macOS screensaver.  For one of my final CS classes, I was brainstorming a list of tech that I hadn't developed anything for or worked with, and screensavers on Mac were on the list as something that would probably lend itself to an easy short-term project.  And lo and behold, it did!  Without further ado, here it is in action.
 			</p>
 			<div class="video">
-				<video controls muted autoplay loop style="max-width: 100%;">
+				<video muted autoplay loop style="max-width: 100%;">
 				  <source src="./sample.mov" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>
