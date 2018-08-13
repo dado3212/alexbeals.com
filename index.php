@@ -59,7 +59,7 @@
 			</div>
 			<div class="columns">
 				<?php
-					$projects = ["dogaday", "surfshield", "markovmessages", "dartdine", "whatsline"];
+					$projects = ["dogaday", "screenmazer", "surfshield", "markovmessages", "dartdine", "whatsline"];
 
 					displaySnippets($projects);
 				?>
