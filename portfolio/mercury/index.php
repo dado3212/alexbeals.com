@@ -19,7 +19,7 @@
 				The tweak is written in Objective-C using the Theos development suite, specifically Logos that allows you to hook into iOS functions and modify how they work.  It uses a repo called <a href="//github.com/atomikpanda/libcolorpicker/">libcolorpicker</a> to be allow high customization of the indicator.
 			</p>
 			<div class="video">
-				<video controls autoplay loop>
+				<video controls autoplay loop muted>
 				  <source src="settings.m4v" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>
