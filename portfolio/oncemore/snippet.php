@@ -5,4 +5,5 @@
   $live = "//cydia.alexbeals.com/OnceMore";
   $github = "//github.com/dado3212/OnceMore";
   $description = "OnceMore is a Cydia tweak that adds a 'Restart' button when a timer goes off.";
+  $center = true;
 ?>

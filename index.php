@@ -10,22 +10,24 @@
 		foreach ($projects as $file) {
 			$snippet = $base_dir . $file . "/snippet.php";
 			if (file_exists($snippet)) {
-				include($snippet);
+				(function() use ($snippet, $file) {
+					include($snippet);
 
-				echo "
-				<article class='preview'>
-					<div class='image'>
-						<img src='portfolio/$file/$image'>
-					</div>
-					<h3><a href='portfolio/$file'>$title</a></h3>
-					<h4>$stack</h4>" . 
-					(strlen($live) > 0 ? "<a class='live' href='$live'>&#xf0c1;</a>" : "") . 
-					(strlen($github) > 0 ? "<a class='github' href='$github'>&#xf09b;</a>" : "") . "
-					<p>
-						$description
-					</p>
-					<a href='portfolio/$file' aria-label='Continuation of writeup'>Read More &rsaquo;</a>
-				</article>";
+					echo "
+					<article class='preview'>
+						<div class='image" . ($center ? " center" : "") . "'>
+							<img src='portfolio/$file/$image'>
+						</div>
+						<h3><a href='portfolio/$file'>$title</a></h3>
+						<h4>$stack</h4>" . 
+						(strlen($live) > 0 ? "<a class='live' href='$live'>&#xf0c1;</a>" : "") . 
+						(strlen($github) > 0 ? "<a class='github' href='$github'>&#xf09b;</a>" : "") . "
+						<p>
+							$description
+						</p>
+						<a href='portfolio/$file' aria-label='Continuation of writeup'>Read More &rsaquo;</a>
+					</article>";
+				})();
 			}
 		}
 	}
@@ -35,7 +37,7 @@
 			<div class="left">
 				<h1>Alex Beals</h1>
 				<p>
-					Developer, hacker, student at Dartmouth College
+					Developer, hacker, SWE at Facebook
 				</p>
 				<a class="resume" href="/assets/Alex Beals Resume.pdf">View my Resume</a>
 				<div class="external">
