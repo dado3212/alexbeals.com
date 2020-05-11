@@ -1,4 +1,5 @@
 .htaccess
+.well-known
 projects
 css/.sass-cache
 css/main.css.map

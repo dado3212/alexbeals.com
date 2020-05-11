@@ -1,5 +1,5 @@
 <?php
-  $page = (isset($_GET["e"]) ? $_GET["e"] : "404");
+  $page = ((isset($_GET["e"]) && is_numeric($_GET["e"])) ? $_GET["e"] : "404");
   $helpText = [
     "403" => "Sorry, you don't have access to the requested file.  Feel free to explore the rest of the site.",
     "404" => "Sorry, that file doesn't exist.  Are you sure you have the right path?",
